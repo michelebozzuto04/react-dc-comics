@@ -1,0 +1,35 @@
+.featuresContainer {
+    height: 160px;
+    background-color: #0282F9;
+    color: white;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1rem;
+
+
+            .img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                vertical-align: middle;
+            }
+
+            .title {
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
