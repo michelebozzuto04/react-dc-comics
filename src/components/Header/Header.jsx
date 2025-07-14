@@ -10,7 +10,7 @@ export default function Header() {
                     <div className='menu-link'>
                         <a>Characters</a>
                     </div>
-                    <div className='menu-link active'>
+                    <div className='menu-link-active'>
                         <a>Comics</a>
                     </div>
                     <div className='menu-link'>

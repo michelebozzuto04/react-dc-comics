@@ -1,0 +1,11 @@
+.footerContainer {
+    height: 370px;
+    background-image: url('../../assets/img/footer-bg.jpg');
+
+    .logoBg {
+        height: 100%;
+        width: 560px;
+        vertical-align: middle;
+        object-fit: cover;
+    }
+}
