@@ -3,35 +3,42 @@
     background-image: url('../../assets/img/footer-bg.jpg');
 
     .container {
+        position: relative;
+        z-index: 1000;
         display: flex;
         align-items: center;
-        position: relative;
         color: white;
         font-family: "Open Sans", sans-serif;
 
         .logoBg {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
             position: absolute;
-            height: 100%;
-            width: 560px;
-            vertical-align: middle;
-            object-fit: cover;
+            z-index: -1;
+        }
+
+        .logoBgImg {
+            width: 600px;
+            height: 370px;
+            object-fit: none;
         }
 
         .list-title {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 10px 30px;
             font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
         }
 
         .list {
-            padding: 0 20px;
+            padding: 0 30px;
             list-style: none;
         }
 
         .list-item {
-            padding: 5px 0;
+            padding-top: 5px;
             color: #949494;
             font-size: 10px;
             text-transform: capitalize;
@@ -39,4 +46,8 @@
         }
     }
 
+}
+
+.footer-bg {
+    position: absolute;
 }
