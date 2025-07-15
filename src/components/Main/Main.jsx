@@ -7,6 +7,8 @@ export default function Header() {
     return (
         <div className='mainContainer'>
             <div className='container'>
+                <div className='jumbotron'></div>
+                <span className='titleTag'>Current series</span>
                 <div className='row'>
                     {comics.map((comic) => {
                         return (
