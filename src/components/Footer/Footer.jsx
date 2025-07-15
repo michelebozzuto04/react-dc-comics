@@ -2,6 +2,149 @@ import './Footer.css'
 import '../../index.css'
 import logoBg from '../../assets/img/dc-logo-bg.png'
 
+const dcComicsMenu = {
+    title: 'DC comics',
+    links: [
+        {
+            title: 'characters',
+            href: '#'
+        },
+        {
+            title: 'comics',
+            href: '#'
+        },
+        {
+            title: 'movies',
+            href: '#'
+        },
+        {
+            title: 'tv',
+            href: '#'
+        },
+        {
+            title: 'games',
+            href: '#'
+        },
+        {
+            title: 'videos',
+            href: '#'
+        },
+        {
+            title: 'fans',
+            href: '#'
+        },
+        {
+            title: 'news',
+            href: '#'
+        }
+    ]
+};
+
+const dcMenu = {
+    title: 'DC',
+    links: [
+        {
+            title: 'terms of use',
+            href: '#'
+        },
+        {
+            title: 'privacy policy (new)',
+            href: '#'
+        },
+        {
+            title: 'ad choices',
+            href: '#'
+        },
+        {
+            title: 'advertising',
+            href: '#'
+        },
+        {
+            title: 'jobs',
+            href: '#'
+        },
+        {
+            title: 'subscriptions',
+            href: '#'
+        },
+        {
+            title: 'talent workshops',
+            href: '#'
+        },
+        {
+            title: 'CPSC certifications',
+            href: '#'
+        },
+        {
+            title: 'ratings',
+            href: '#'
+        },
+        {
+            title: 'show help',
+            href: '#'
+        },
+        {
+            title: 'Contact us',
+            href: '#'
+        }
+    ]
+};
+
+const sitesMenu = {
+    title: 'Sites',
+    links: [
+        {
+            title: 'DC',
+            href: '#'
+        },
+        {
+            title: 'MAD magazine',
+            href: '#'
+        },
+        {
+            title: 'DC kids',
+            href: '#'
+        },
+        {
+            title: 'DC universe',
+            href: '#'
+        },
+        {
+            title: 'DC power visa',
+            href: '#'
+        }
+    ]
+}
+
+const shopsMenu = {
+    title: 'Shop',
+    links: [
+        {
+            title: 'Shop DC',
+            href: '#'
+        },
+        {
+            title: 'Shop DC Collectibles',
+            href: '#'
+        }
+    ]
+}
+
+function renderMenu(menuObj) {
+    return (
+        <div>
+            <span className='list-title'>{menuObj.title}</span>
+            <ul className='list'>
+                {menuObj.links.map((link) => {
+                    return (
+                        <li><a className='list-item' href={link.href}>{link.title}</a></li>
+                    )
+                })}
+            </ul>
+        </div>
+    )
+}
+
 export default function Footer() {
     return (
         <>
@@ -11,53 +154,20 @@ export default function Footer() {
                         <div className='col-4'>
                             <div className='row'>
                                 <div className='col-12'>
-                                    <span className='list-title'>DC comics</span>
-                                    <ul className='list'>
-                                        <li><a className='list-item' href='#'>Characters</a></li>
-                                        <li><a className='list-item' href='#'>Comics</a></li>
-                                        <li><a className='list-item' href='#'>Movies</a></li>
-                                        <li><a className='list-item' href='#'>TV</a></li>
-                                        <li><a className='list-item' href='#'>Games</a></li>
-                                        <li><a className='list-item' href='#'>Videos</a></li>
-                                        <li><a className='list-item' href='#'>News</a></li>
-                                    </ul>
+                                    {renderMenu(dcComicsMenu)}
                                 </div>
                             </div>
                             <div className='row'>
                                 <div className='col-12'>
-                                    <span className='list-title'>Shop</span>
-                                    <ul className='list'>
-                                        <li><a className='list-item' href='#'>Shop DC</a></li>
-                                        <li><a className='list-item' href='#'>Shop DC Collectibles</a></li>
-                                    </ul>
+                                    {renderMenu(shopsMenu)}
                                 </div>
                             </div>
                         </div>
                         <div className='col-4'>
-                            <span className='list-title'>DC</span>
-                            <ul className='list'>
-                                <li><a className='list-item' href='#'>Terms Of Use</a></li>
-                                <li><a className='list-item' href='#'>Privacy Policy (New)</a></li>
-                                <li><a className='list-item' href='#'>Ad Choices</a></li>
-                                <li><a className='list-item' href='#'>Advertising</a></li>
-                                <li><a className='list-item' href='#'>Jobs</a></li>
-                                <li><a className='list-item' href='#'>Subscriptions</a></li>
-                                <li><a className='list-item' href='#'>Talent Workshops</a></li>
-                                <li><a className='list-item' href='#'>CPSC Certifications</a></li>
-                                <li><a className='list-item' href='#'>Ratings</a></li>
-                                <li><a className='list-item' href='#'>Show Help</a></li>
-                                <li><a className='list-item' href='#'>Contact Us</a></li>
-                            </ul>
+                            {renderMenu(dcMenu)}
                         </div>
                         <div className='col-4'>
-                            <span className='list-title'>Sites</span>
-                            <ul className='list'>
-                                <li><a className='list-item' href='#'>DC</a></li>
-                                <li><a className='list-item' href='#'>MAD Magazine</a></li>
-                                <li><a className='list-item' href='#'>DC Kids</a></li>
-                                <li><a className='list-item' href='#'>DC Universe</a></li>
-                                <li><a className='list-item' href='#'>DC Power Visa</a></li>
-                            </ul>
+                            {renderMenu(sitesMenu)}
                         </div>
                     </div>
                     <div className='logoBg'>
