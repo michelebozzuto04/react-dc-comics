@@ -17,10 +17,10 @@
         align-items: center;
 
         .row {
-            row-gap: 10px;
+            row-gap: 40px;
 
             .col-2 {
-                padding: 1rem;
+                padding: 0rem 1rem;
             }
         }
 
@@ -44,6 +44,7 @@
             .comicImage {
                 aspect-ratio: 1 / 1;
                 object-fit: cover;
+                object-position: 0 0;
             }
 
             .comicTitle {
@@ -57,7 +58,7 @@
         }
 
         .loadBtn {
-            margin-top: 20px;
+            margin-top: 30px;
             width: 185px;
             height: 35px;
             text-transform: uppercase;
