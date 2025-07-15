@@ -6,30 +6,41 @@ import shopLocator from '../../assets/img/shop-locator.png'
 import subscriptions from '../../assets/img/subscriptions.png'
 import powerVisa from '../../assets/img/power-visa.svg'
 
+const features = [
+    {
+        img: digitalComics,
+        title: "Digital comics"
+    },
+    {
+        img: merchandise,
+        title: "DC Merchandise"
+    },
+    {
+        img: subscriptions,
+        title: "Subscription"
+    },
+    {
+        img: shopLocator,
+        title: "Comic shop locator"
+    },
+    {
+        img: powerVisa,
+        title: "DC power visa"
+    },
+];
+
 export default function Features() {
     return (
         <div className='featuresContainer'>
             <div className='container'>
-                <div className='feature'>
-                    <img className='img' src={digitalComics} />
-                    <span className='title'>Digital comics</span>
-                </div>
-                <div className='feature'>
-                    <img className='img' src={merchandise} />
-                    <span className='title'>DC merchandise</span>
-                </div>
-                <div className='feature'>
-                    <img className='img' src={shopLocator} />
-                    <span className='title'>Subscription</span>
-                </div>
-                <div className='feature'>
-                    <img className='img' src={subscriptions} />
-                    <span className='title'>Comic shop locator</span>
-                </div>
-                <div className='feature'>
-                    <img className='img' src={powerVisa} />
-                    <span className='title'>DC power visa</span>
-                </div>
+                {features.map((feature, index) => {
+                    return (
+                        <div key={index} className='feature'>
+                            <img className='img' src={feature.img} />
+                            <span className='title'>{feature.title}</span>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

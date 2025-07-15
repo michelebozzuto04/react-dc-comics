@@ -1,0 +1,42 @@
+.socialsContainer {
+    height: 110px;
+    background-color: #303030;
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn {
+            width: 145px;
+            height: 50px;
+            background-color: transparent;
+            border: 2px solid #0282F9;
+            text-transform: uppercase;
+            font-family: "Open Sans" sans-serif;
+            font-weight: 700;
+            color: white;
+        }
+
+        .socialsListSection {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+
+            .socialsText {
+                color: #0282F9;
+                font-size: 16px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 700;
+            }
+
+            .socialImg {
+                width: 35px;
+                height: 35px;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
