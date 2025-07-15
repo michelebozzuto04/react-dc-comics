@@ -25,9 +25,9 @@ export default function Socials() {
                 <div className='socialsListSection'>
                     <span className='socialsText'>FOLLOW US</span>
                     <ul>
-                        {socials.map((social) => {
+                        {socials.map((social, index) => {
                             return (
-                                <img className='socialImg' src={social} />
+                                <img key={index} className='socialImg' src={social} />
                             )
                         })}
                     </ul>
