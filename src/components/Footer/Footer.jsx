@@ -135,9 +135,9 @@ function renderMenu(menuObj) {
         <div>
             <span className='list-title'>{menuObj.title}</span>
             <ul className='list'>
-                {menuObj.links.map((link) => {
+                {menuObj.links.map((link, index) => {
                     return (
-                        <li><a className='list-item' href={link.href}>{link.title}</a></li>
+                        <li key={index}><a className='list-item' href={link.href}>{link.title}</a></li>
                     )
                 })}
             </ul>
