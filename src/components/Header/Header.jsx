@@ -1,58 +1,6 @@
 import logo from '../../assets/img/dc-logo.png'
 import './Header.css'
-
-const menu = [
-    {
-        href: '#',
-        title: 'Characters',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Comics',
-        active: true
-    },
-    {
-        href: '#',
-        title: 'Movies',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Tv',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Games',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Collectibles',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Videos',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Fans',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'News',
-        active: false
-    },
-    {
-        href: '#',
-        title: 'Shop',
-        active: false
-    },
-]
+import { menu } from '../../data/navigation/menus'
 
 export default function Header() {
     return (
