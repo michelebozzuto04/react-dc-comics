@@ -1,9 +1,8 @@
 import './Main.css'
 import '../../index.css'
-import comics from '../../data/comics'
 import ComicCard from './ComicCard/ComicCard'
 
-export default function Header() {
+export default function Header(props) {
 
     return (
         <div className='mainContainer'>
@@ -11,9 +10,9 @@ export default function Header() {
             <div className='container'>
                 <span className='titleTag'>Current series</span>
                 <div className='row'>
-                    {comics.map((comic) => {
+                    {props.data.map((comic) => {
                         return (
-                            <ComicCard comic={comic} />
+                            <ComicCard key={comic.id} comic={comic} />
                         )
                     })}
                 </div>

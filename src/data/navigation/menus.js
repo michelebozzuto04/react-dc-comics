@@ -1,4 +1,168 @@
-export const menu = [
+export const footerMenu = {
+    dcComicsMenu: {
+        title: 'DC comics',
+        links: [
+            {
+                title: 'characters',
+                href: '#'
+            },
+            {
+                title: 'comics',
+                href: '#'
+            },
+            {
+                title: 'movies',
+                href: '#'
+            },
+            {
+                title: 'tv',
+                href: '#'
+            },
+            {
+                title: 'games',
+                href: '#'
+            },
+            {
+                title: 'videos',
+                href: '#'
+            },
+            {
+                title: 'fans',
+                href: '#'
+            },
+            {
+                title: 'news',
+                href: '#'
+            }
+        ]
+    },
+    dcComicsMenu: {
+        title: 'DC comics',
+        links: [
+            {
+                title: 'characters',
+                href: '#'
+            },
+            {
+                title: 'comics',
+                href: '#'
+            },
+            {
+                title: 'movies',
+                href: '#'
+            },
+            {
+                title: 'tv',
+                href: '#'
+            },
+            {
+                title: 'games',
+                href: '#'
+            },
+            {
+                title: 'videos',
+                href: '#'
+            },
+            {
+                title: 'fans',
+                href: '#'
+            },
+            {
+                title: 'news',
+                href: '#'
+            }
+        ]
+    },
+    dcMenu: {
+        title: 'DC',
+        links: [
+            {
+                title: 'terms of use',
+                href: '#'
+            },
+            {
+                title: 'privacy policy (new)',
+                href: '#'
+            },
+            {
+                title: 'ad choices',
+                href: '#'
+            },
+            {
+                title: 'advertising',
+                href: '#'
+            },
+            {
+                title: 'jobs',
+                href: '#'
+            },
+            {
+                title: 'subscriptions',
+                href: '#'
+            },
+            {
+                title: 'talent workshops',
+                href: '#'
+            },
+            {
+                title: 'CPSC certifications',
+                href: '#'
+            },
+            {
+                title: 'ratings',
+                href: '#'
+            },
+            {
+                title: 'show help',
+                href: '#'
+            },
+            {
+                title: 'Contact us',
+                href: '#'
+            }
+        ]
+    },
+    sitesMenu: {
+        title: 'Sites',
+        links: [
+            {
+                title: 'DC',
+                href: '#'
+            },
+            {
+                title: 'MAD magazine',
+                href: '#'
+            },
+            {
+                title: 'DC kids',
+                href: '#'
+            },
+            {
+                title: 'DC universe',
+                href: '#'
+            },
+            {
+                title: 'DC power visa',
+                href: '#'
+            }
+        ]
+    },
+    shopsMenu: {
+        title: 'Shop',
+        links: [
+            {
+                title: 'Shop DC',
+                href: '#'
+            },
+            {
+                title: 'Shop DC Collectibles',
+                href: '#'
+            }
+        ]
+    }
+}
+
+export const headerMenu = [
     {
         href: '#',
         title: 'Characters',
@@ -50,131 +214,3 @@ export const menu = [
         active: false
     },
 ];
-
-export const dcComicsMenu = {
-    title: 'DC comics',
-    links: [
-        {
-            title: 'characters',
-            href: '#'
-        },
-        {
-            title: 'comics',
-            href: '#'
-        },
-        {
-            title: 'movies',
-            href: '#'
-        },
-        {
-            title: 'tv',
-            href: '#'
-        },
-        {
-            title: 'games',
-            href: '#'
-        },
-        {
-            title: 'videos',
-            href: '#'
-        },
-        {
-            title: 'fans',
-            href: '#'
-        },
-        {
-            title: 'news',
-            href: '#'
-        }
-    ]
-};
-
-export const dcMenu = {
-    title: 'DC',
-    links: [
-        {
-            title: 'terms of use',
-            href: '#'
-        },
-        {
-            title: 'privacy policy (new)',
-            href: '#'
-        },
-        {
-            title: 'ad choices',
-            href: '#'
-        },
-        {
-            title: 'advertising',
-            href: '#'
-        },
-        {
-            title: 'jobs',
-            href: '#'
-        },
-        {
-            title: 'subscriptions',
-            href: '#'
-        },
-        {
-            title: 'talent workshops',
-            href: '#'
-        },
-        {
-            title: 'CPSC certifications',
-            href: '#'
-        },
-        {
-            title: 'ratings',
-            href: '#'
-        },
-        {
-            title: 'show help',
-            href: '#'
-        },
-        {
-            title: 'Contact us',
-            href: '#'
-        }
-    ]
-};
-
-export const sitesMenu = {
-    title: 'Sites',
-    links: [
-        {
-            title: 'DC',
-            href: '#'
-        },
-        {
-            title: 'MAD magazine',
-            href: '#'
-        },
-        {
-            title: 'DC kids',
-            href: '#'
-        },
-        {
-            title: 'DC universe',
-            href: '#'
-        },
-        {
-            title: 'DC power visa',
-            href: '#'
-        }
-    ]
-}
-
-export const shopsMenu = {
-    title: 'Shop',
-    links: [
-        {
-            title: 'Shop DC',
-            href: '#'
-        },
-        {
-            title: 'Shop DC Collectibles',
-            href: '#'
-        }
-    ]
-};

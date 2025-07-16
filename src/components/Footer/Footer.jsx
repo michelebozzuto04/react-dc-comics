@@ -1,7 +1,6 @@
 import './Footer.css'
 import '../../index.css'
 import logoBg from '../../assets/img/dc-logo-bg.png'
-import { dcComicsMenu, dcMenu, sitesMenu, shopsMenu } from '../../data/navigation/menus'
 
 function renderMenu(menuObj) {
     return (
@@ -18,7 +17,7 @@ function renderMenu(menuObj) {
     )
 }
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <>
             <div className="footerContainer">
@@ -27,20 +26,20 @@ export default function Footer() {
                         <div className='col-4'>
                             <div className='row'>
                                 <div className='col-12'>
-                                    {renderMenu(dcComicsMenu)}
+                                    {renderMenu(props.menu.dcComicsMenu)}
                                 </div>
                             </div>
                             <div className='row'>
                                 <div className='col-12'>
-                                    {renderMenu(shopsMenu)}
+                                    {renderMenu(props.menu.shopsMenu)}
                                 </div>
                             </div>
                         </div>
                         <div className='col-4'>
-                            {renderMenu(dcMenu)}
+                            {renderMenu(props.menu.dcMenu)}
                         </div>
                         <div className='col-4'>
-                            {renderMenu(sitesMenu)}
+                            {renderMenu(props.menu.sitesMenu)}
                         </div>
                     </div>
                     <div className='logoBg'>
