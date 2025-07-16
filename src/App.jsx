@@ -2,7 +2,7 @@ import Features from './components/Features/Features'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Main from './components/Main/Main'
-import Socials from './components/Socials/Socials'
+import Socials from './components/Footer/Socials/Socials'
 
 function App() {
 

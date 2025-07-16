@@ -5,6 +5,7 @@ import merchandise from '../../assets/img/merchandise.png'
 import shopLocator from '../../assets/img/shop-locator.png'
 import subscriptions from '../../assets/img/subscriptions.png'
 import powerVisa from '../../assets/img/power-visa.svg'
+import FeatureItem from './FeatureItem/FeatureItem'
 
 const features = [
     {
@@ -35,10 +36,7 @@ export default function Features() {
             <div className='container'>
                 {features.map((feature, index) => {
                     return (
-                        <div key={index} className='feature'>
-                            <img className='img' src={feature.img} />
-                            <span className='title'>{feature.title}</span>
-                        </div>
+                        <FeatureItem key={index} feature={feature} />
                     )
                 })}
             </div>

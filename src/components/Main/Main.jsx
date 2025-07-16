@@ -1,6 +1,7 @@
 import './Main.css'
 import '../../index.css'
 import comics from '../../data/comics'
+import ComicCard from './ComicCard/ComicCard'
 
 export default function Header() {
 
@@ -12,10 +13,7 @@ export default function Header() {
                 <div className='row'>
                     {comics.map((comic) => {
                         return (
-                            <div key={comic.id} className='comicCard col-2'>
-                                <img className='comicImage' src={comic.thumb} />
-                                <span className='comicTitle'>{comic.title}</span>
-                            </div>
+                            <ComicCard comic={comic} />
                         )
                     })}
                 </div>
